@@ -23,10 +23,12 @@ export ANT_HOME=/c/opt/apache-ant-1.8.1
 export MAVEN_HOME=/c/regis/dev/apache-maven-3.5.0
 export NODE_HOME="/c/Program Files/nodejs"
 export NPM_HOME=/c/Users/ruizxu/AppData/Roaming/npm
+export PCF_CL="/c/Users/ruizxu/AppData/Roaming/Cloud Foundry"
+
 
 export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
 
-export PATH=~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$NODE_HOME:$NPM_HOME:$DOCKER_TOOLBOX_INSTALL_PATH:$PATH:/mingw64/bin:/mingw32/bin
+export PATH="$PCF_CL":~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$NODE_HOME:$NPM_HOME:$DOCKER_TOOLBOX_INSTALL_PATH:$PATH:/mingw64/bin:/mingw32/bin
 
 eval "$(docker-machine.exe env --shell=bash default)"
 
