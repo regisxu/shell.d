@@ -29,6 +29,8 @@ PROMPT='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__gi
 # for 8 colors term
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/513
-ZSH_HIGHLIGHT_MAXLENGTH=120
+ZSH_HIGHLIGHT_MAXLENGTH=60
+# ecommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for too long strings.
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 source ~/.shell/init.sh
