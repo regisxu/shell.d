@@ -1,5 +1,7 @@
 source ~/.shell/antigen.zsh
 
+autoload -U colors && colors
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
