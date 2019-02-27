@@ -1,3 +1,7 @@
+# antigen need Git
+export GIT_HOME=/c/regis/apps/PortableGit
+export PATH=$PATH:$GIT_HOME/bin
+
 source ~/.shell/antigen.zsh
 
 autoload -U colors && colors
