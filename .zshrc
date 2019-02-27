@@ -32,6 +32,8 @@ fpath=(~/.shell $fpath)
 
 PROMPT='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__git_ps1)%{$reset_color%}'$'\n'"$ "
 
+ZSH_THEME_TERM_TITLE_IDLE="%3d"
+
 # for 8 colors term
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/513
