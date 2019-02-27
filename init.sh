@@ -4,7 +4,7 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
 alias e='emacsclientw -n'
-alias docker='docker -l error'
+alias docker='MSYS2_ARG_CONV_EXCL="*" docker'
 
 export EDITOR='emacsclient'
 export LESS="-XRF"
