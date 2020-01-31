@@ -18,7 +18,7 @@ export NVM_DIR="/c/regis/.nvm"
 
 export JAVA_DEBUG="-agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address=0.0.0.0:8787"
 
-export JAVA_HOME=/c/opt/java
+export JAVA_HOME=/c/regis/dev/jdk-11.0.1
 export ANT_HOME=/c/opt/apache-ant-1.8.1
 export MAVEN_HOME=/c/regis/dev/apache-maven-3.5.0
 export NODE_HOME="/c/Program Files/nodejs"
