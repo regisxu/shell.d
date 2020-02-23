@@ -20,7 +20,8 @@ PROMPT='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__gi
 
 export JAVA_DEBUG="-agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address=0.0.0.0:8787"
 
-export JAVA_HOME=/c/regis/dev/jdk-11.0.1
+#export JAVA_HOME=/c/regis/dev/jdk-11.0.1
+export JAVA_HOME=/c/regis/dev/jdk1.8.0_131
 export MAVEN_HOME=/c/regis/dev/apache-maven-3.5.0
 export NODE_HOME="/c/regis/dev/nodejs"
 export PCF_CL="/c/Program Files/Cloud Foundry"
