@@ -20,15 +20,17 @@ PROMPT='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__gi
 
 export JAVA_DEBUG="-agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address=0.0.0.0:8787"
 
+export GIT_HOME=/c/regis/apps/PortableGit
 export JAVA_HOME=/c/regis/dev/jdk1.8.0_131
 export MAVEN_HOME=/c/regis/dev/apache-maven-3.5.0
-export NODE_HOME="/c/regis/dev/nodejs"
+export GRADLE_HOME=/c/regis/dev/gradle-4.10
+export NODE_HOME="/c/Program Files/nodejs"
 export PCF_CL="/c/Program Files/Cloud Foundry"
 export PYTHON_HOME=/c/Users/ruizxu/AppData/Local/Programs/Python/Python37
 
 export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
 
-export PATH=$NODE_HOME:$PYTHON_HOME:$PYTHON_HOME/Scripts:"$PCF_CL":~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin"
+export PATH=$GIT_HOME/bin:$NODE_HOME:$PYTHON_HOME:$PYTHON_HOME/Scripts:"$PCF_CL":~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin":/c/Users/ruizxu/AppData/Roaming/npm
 
 #eval "$(docker-machine.exe env --shell=bash default)"
 
