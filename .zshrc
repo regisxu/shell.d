@@ -6,6 +6,8 @@ source ~/.shell/antigen.zsh
 
 autoload -U colors && colors
 
+bindkey \^U backward-kill-line
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
