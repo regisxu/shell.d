@@ -8,12 +8,14 @@ alias docker='MSYS2_ARG_CONV_EXCL="*" docker'
 
 export EDITOR='emacsclient'
 export LESS="-XRF"
+#export LESS="-RF"
 
-source ~/.shell/config-ssh-agent.sh
+#source ~/.shell/config-ssh-agent.sh
 
 source ~/.shell/git-prompt.sh
 
 PROMPT='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__git_ps1)%{$reset_color%}'$'\n'"$ "
+
 
 #export NVM_DIR="/c/regis/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -25,12 +27,15 @@ export JAVA_HOME=/c/regis/dev/jdk1.8.0_131
 export MAVEN_HOME=/c/regis/dev/apache-maven-3.5.0
 export GRADLE_HOME=/c/regis/dev/gradle-4.10
 export NODE_HOME="/c/Program Files/nodejs"
-export PCF_CL="/c/Program Files/Cloud Foundry"
-export PYTHON_HOME=/c/Users/ruizxu/AppData/Local/Programs/Python/Python37
+export PYTHON_HOME=/c/regis/dev/python-3.7.2
 
 export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
 
-export PATH=$GIT_HOME/bin:$NODE_HOME:$PYTHON_HOME:$PYTHON_HOME/Scripts:"$PCF_CL":~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin":/c/Users/ruizxu/AppData/Roaming/npm
+#export CLOUD_SDK="/c/Users/ruizxu/AppData/Local/Google/CloudSDK/google-cloud-sdk"
+
+export PATH=$CLOUD_SDK/bin:$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/Scripts:"$PCF_CL":~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin":/c/Users/ruizxu/AppData/Roaming/npm
+
+export STUBPROXY=http://10.131.71.31:80
 
 #eval "$(docker-machine.exe env --shell=bash default)"
 
