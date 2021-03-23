@@ -1,6 +1,3 @@
-# antigen need Git
-export GIT_HOME=/c/regis/apps/PortableGit
-export PATH=$PATH:$GIT_HOME/bin
 
 source ~/.shell/antigen.zsh
 
@@ -32,7 +29,7 @@ antigen apply
 
 fpath=(~/.shell $fpath)
 
-PROMPT='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__git_ps1)%{$reset_color%}'$'\n'"$ "
+PROMPT='%{$fg[green]%}%n@wsl%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__git_ps1)%{$reset_color%}'$'\n'"$ "
 
 ZSH_THEME_TERM_TITLE_IDLE="%3d"
 
