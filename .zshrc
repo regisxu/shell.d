@@ -35,7 +35,7 @@ fpath=(~/.shell $fpath)
 ZSH_THEME_TERM_TITLE_IDLE="%3d"
 
 # for 8 colors term
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/513
 ZSH_HIGHLIGHT_MAXLENGTH=60
 # recommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for too long strings.
