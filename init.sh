@@ -36,6 +36,8 @@ export PATH=$CLOUD_SDK/bin:$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/
 
 export STUBPROXY=http://10.131.71.31:80
 
+export BAT_CONFIG_PATH=/c/regis/.shell/bat.conf
+
 # support ConEmu Hyperlinks
 # if [[ -n "$CONEMUDIR" ]]; then
 #     export PROMPT_COMMAND='ConEmuC -StoreCWD'
