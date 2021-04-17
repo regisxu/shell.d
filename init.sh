@@ -30,9 +30,7 @@ export PYTHON_HOME=/c/regis/dev/python-3.7.2
 
 export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
 
-#export CLOUD_SDK="/c/Users/ruizxu/AppData/Local/Google/CloudSDK/google-cloud-sdk"
-
-export PATH=$CLOUD_SDK/bin:$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/Scripts:"$PCF_CL":~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin":/c/Users/ruizxu/AppData/Roaming/npm
+export PATH=$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/Scripts:~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin":/c/Users/ruizxu/AppData/Roaming/npm
 
 export STUBPROXY=http://10.131.71.31:80
 
