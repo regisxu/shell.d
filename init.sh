@@ -5,6 +5,7 @@ alias ll='ls -l'
 alias la='ls -a'
 alias e='emacsclientw.exe -n'
 alias docker='sudo docker'
+alias bat='batcat --style plain'
 
 export EDITOR='emacsclient.exe'
 
@@ -20,7 +21,7 @@ export JAVA_DEBUG="-agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export ANT_HOME=/c/opt/apache-ant-1.8.1
-export MAVEN_HOME=/c/regis/dev/apache-maven-3.5.0
+export MAVEN_HOME=/mnt/c/regis/dev/apache-maven-3.5.0
 
 
 export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
