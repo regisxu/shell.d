@@ -8,6 +8,7 @@ alias docker='sudo docker'
 alias bat='batcat --style plain'
 
 export EDITOR='emacsclient.exe'
+export LESS="-XRF"
 
 #source ~/.shell/config-ssh-agent.sh
 
@@ -16,6 +17,8 @@ source ~/.shell/git-prompt.sh
 source ~/.shell/_kubectl
 alias k=kubectl
 complete -F __start_kubectl k
+
+source ~/.shell/_istioctl
 
 export JAVA_DEBUG="-agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address=0.0.0.0:8787"
 
