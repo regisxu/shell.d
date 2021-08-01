@@ -16,6 +16,7 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 ### Fix slowness of pastes
 
+PATH=/c/regis/apps/PortableGit/bin:$PATH
 source ~/.shell/antigen.zsh
 # antigen-init command doesn't look into bundle configuration changes, thus you'll need to use antigen-reset to reload plugins.
 antigen init ~/.shell/.antigenrc
