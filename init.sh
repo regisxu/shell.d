@@ -22,7 +22,7 @@ source ~/.shell/_istioctl
 
 #PROMPT='%{$fg[green]%}ruizxu@%m%{$reset_color%} %{$fg[yellow]%}%~%{$fg[cyan]%}$(__git_ps1)%{$reset_color%}'$'\n'"$ "
 # zsh hange after resize font if set PROMPT directly with __git_ps1
-precmd () { __git_ps1 "%{$fg[green]%}ruizxu@%m%{$reset_color%} %{$fg[yellow]%}%~%{$reset_color%} %{$fg[cyan]%}" '%{$reset_color%}'$'\n'"$ " "(%s)" }
+precmd () { __git_ps1 "%{$fg[green]%}ruizxu@%m%{$reset_color%} %{$fg[yellow]%}%~%{$reset_color%} %{$fg[cyan]%}" "%{$reset_color%}"$'\n'"$ " "(%s)" }
 
 
 #export NVM_DIR="/c/regis/.nvm"
