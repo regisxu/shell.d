@@ -25,17 +25,17 @@ source ~/.shell/_istioctl
 precmd () { __git_ps1 "%{$fg[green]%}ruizxu@%m%{$reset_color%} %{$fg[yellow]%}%~%{$reset_color%} %{$fg[cyan]%}" "%{$reset_color%}"$'\n'"$ " "(%s)" }
 
 
-#export NVM_DIR="/c/regis/.nvm"
+#export NVM_DIR="~/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export JAVA_DEBUG="-agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address=0.0.0.0:8787"
 
-export GIT_HOME=/c/regis/apps/PortableGit
-export JAVA_HOME=/c/regis/dev/jdk-11.0.12
-export MAVEN_HOME=/c/regis/dev/apache-maven-3.8.1
-export GRADLE_HOME=/c/regis/dev/gradle-4.10
+export GIT_HOME=~/apps/PortableGit
+export JAVA_HOME=~/dev/jdk-11.0.12
+export MAVEN_HOME=~/dev/apache-maven-3.8.1
+export GRADLE_HOME=~/dev/gradle-4.10
 export NODE_HOME="/c/Program Files/nodejs"
-export PYTHON_HOME=/c/regis/dev/python-3.7.2
+export PYTHON_HOME=~/dev/python-3.7.2
 export AZURE_HOME="/c/Program Files (x86)/Microsoft SDKs/Azure/CLI2"
 
 export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
@@ -44,7 +44,7 @@ export PATH=$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/Scripts:~/bin:~
 
 export STUBPROXY=http://10.131.71.31:80
 
-export BAT_CONFIG_PATH=/c/regis/.shell/bat.conf
+export BAT_CONFIG_PATH=~/.shell/bat.conf
 
 # support ConEmu Hyperlinks
 # if [[ -n "$CONEMUDIR" ]]; then
