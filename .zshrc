@@ -16,7 +16,7 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 ### Fix slowness of pastes
 
-PATH=/c/regis/apps/PortableGit/bin:$PATH
+#PATH=/c/regis/apps/PortableGit/bin:$PATH
 source ~/.shell/antigen.zsh
 # antigen-init command doesn't look into bundle configuration changes, thus you'll need to use antigen-reset to reload plugins.
 antigen init ~/.shell/.antigenrc
@@ -31,15 +31,17 @@ compinit -C
   
 bindkey \^U backward-kill-line
 
+zstyle ':completion:*:*:git:*' script ~/.shell/git-completion.bash
+
 fpath=(~/.shell $fpath)
 
 ZSH_THEME_TERM_TITLE_IDLE="%3d"
 
 # for 8 colors term
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=black,bold'
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/513
-ZSH_HIGHLIGHT_MAXLENGTH=60
+#ZSH_HIGHLIGHT_MAXLENGTH=60
 # recommended value is 20. This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for too long strings.
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+#ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 source ~/.shell/init.sh
