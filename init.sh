@@ -46,6 +46,26 @@ export PATH=$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/Scripts:~/bin:~
 
 export BAT_CONFIG_PATH=~/.shell/bat.conf
 
+export FZF_DEFAULT_COMMAND='fd -H --strip-cwd-prefix'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+export FZF_DEFAULT_OPTS='--height 60% --layout=reverse -m'
+
+export FZF_CTRL_T_OPTS="
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-/:toggle-preview'
+  --color header:italic
+  --header 'CTRL-/ toggle preview'"
+
+export FZF_CTRL_R_OPTS="
+  --preview 'echo {}' --preview-window up:3:hidden:wrap
+  --bind 'ctrl-/:toggle-preview'
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --color header:italic
+  --header 'CTRL-Y copy command, CTRL-/ toggle preview'"
+
+
+
 # support ConEmu Hyperlinks
 # if [[ -n "$CONEMUDIR" ]]; then
 #     export PROMPT_COMMAND='ConEmuC -StoreCWD'
