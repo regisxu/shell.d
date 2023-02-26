@@ -1,10 +1,12 @@
+export PATH=$PATH:/Applications/Emacs.app/Contents/MacOS/bin
+
 cd ~
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
-alias e='emacsclientw -n'
-alias docker='MSYS2_ARG_CONV_EXCL="*" docker'
+alias e='emacsclient -n'
+#alias docker='MSYS2_ARG_CONV_EXCL="*" docker'
 
 export EDITOR='emacsclient'
 export LESS="-XRF"
@@ -30,19 +32,17 @@ precmd () { __git_ps1 "%{$fg[green]%}ruizxu@%m%{$reset_color%} %{$fg[yellow]%}%~
 
 export JAVA_DEBUG="-agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address=0.0.0.0:8787"
 
-export GIT_HOME=~/apps/PortableGit
-export JAVA_HOME=~/dev/jdk-11.0.12
-export MAVEN_HOME=~/dev/apache-maven-3.8.1
-export GRADLE_HOME=~/dev/gradle-4.10
-export NODE_HOME="/c/Program Files/nodejs"
-export PYTHON_HOME=~/dev/python-3.7.2
+#export GIT_HOME=~/apps/PortableGit
+export JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.17
+#export MAVEN_HOME=~/dev/apache-maven-3.8.1
+#export GRADLE_HOME=~/dev/gradle-4.10
+#export NODE_HOME="/c/Program Files/nodejs"
+#export PYTHON_HOME=~/dev/python-3.7.2
 export AZURE_HOME="/c/Program Files (x86)/Microsoft SDKs/Azure/CLI2"
 
 export MAVEN_OPTS="$MAVEN_OPTS -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
 
-export PATH=$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/Scripts:~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin":/c/Users/ruizxu/AppData/Roaming/npm:"$AZURE_HOME/wbin"
-
-export STUBPROXY=http://10.131.71.31:80
+export PATH=$GIT_HOME/bin:"$NODE_HOME":$PYTHON_HOME:$PYTHON_HOME/Scripts:~/bin:~/apps/emacs/bin:$JAVA_HOME/jre/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$PATH:/mingw64/bin:/mingw32/bin:"/c/Program Files/Docker/Docker/resources/bin":/c/Users/ruizxu/AppData/Roaming/npm:"$AZURE_HOME/wbin":~/dev/google-cloud-sdk/bin
 
 export BAT_CONFIG_PATH=~/.shell/bat.conf
 
